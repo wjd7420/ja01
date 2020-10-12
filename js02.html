@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		let tel = "1234-345"; //전역번수
+		{
+			age =25; //값 할당
+			var age; //변수선언
+			
+			console.log(age);
+			console.log("전역1 =>" +tel);
+		}
+		{
+			let name; //지역변수
+			name="정혜진";
+			console.log("블럭 =>" +name);
+			console.log("전역 =>" +tel);
+		}
+		console.log("값 =>" + name);
+		console.log("전역2 =>" +tel);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
